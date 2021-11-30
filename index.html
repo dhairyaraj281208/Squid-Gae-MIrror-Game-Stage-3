@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mirror Squid Game</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script
+        src="https://cdn.jsdelivr.net/gh/n5ro/aframe-physics-system@v4.0.1/dist/aframe-physics-system.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://recast-api.donmccurdy.com/aframe-inspector-plugin-recast.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-spe-particles-component@1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+    <script
+        src="https://rawgit.com/fernandojsg/aframe-teleport-controls/master/dist/aframe-teleport-controls.min.js"></script>
+
+    <script src="./components/mirror1.js"></script>
+    <script src="./components/mirror2.js"></script>
+    <script src="./components/mirror3.js"></script>
+    <script src="./components/mirror4.js"></script>
+    <script src="./components/mirror5.js"></script>
+    <script src="./components/mirror6.js"></script>
+    <script src="./components/mirror7.js"></script>
+    <script src="./components/mirror8.js"></script>
+    <script src="./components/mirror9.js"></script>
+    <script src="./components/mirror10.js"></script>
+    <script src="./components/mirror11.js"></script>
+    <script src="./components/mirror12.js"></script>
+    <script src="./components/mirror13.js"></script>
+    <script src="./components/mirror14.js"></script>
+    <script src="./components/mirror15.js"></script>
+    <script src="./components/mirror16.js"></script>
+    <script src="./components/mirror17.js"></script>
+    <script src="./components/mirror18.js"></script>
+    <script src="./components/mirror19.js"></script>
+    <script src="./components/mirror20.js"></script>
+    <script src="./components/colider.js"></script>
+    <script src="./components//playerMovement.js"></script>
+
+
+</head>
+
+<body>
+    <a-scene id="scene" background="color: black">
+
+
+
+        <a-assets>
+            <a-asset-item id="wood" src="assets/models/scene.gltf"></a-asset-item>
+        </a-assets>
+
+        <a-entity id="camera" camera position="0 1.6 0" wasd-controls>
+            <a-entity id="wood" gltf-model="#wood" position="0 -4.4 3" rotation="0 180 0" scale="0.35 1 1"
+                player-movement>
+            </a-entity>
+            <a-entity id="playerLife" position="-2 5 -7.16344"
+                text="font: mozillavr; width:10; height: 5;value: Score:">
+                <a-entity id="count" position="3 0 0" text="font: mozillavr; width:10; height: 5; value: 0"></a-entity>
+            </a-entity>
+        </a-entity>
+
+
+
+        <!-- <a-sky id="sky" src="./assets/images/Background.png"></a-sky> -->
+
+        <!-- <a-entity id="river" geometry="primitive: plane" material="color: blue"
+          position="-10 0 0" sound="src: url(./assets/images/background.mp3); autoplay: true; loop: true" ></a-entity> -->
+
+
+        <a-entity mirror></a-entity>
+        <a-entity mirror2></a-entity>
+        <a-entity mirror3></a-entity>
+        <a-entity mirror4></a-entity>
+        <a-entity mirror5></a-entity>
+        <a-entity mirror6></a-entity>
+        <a-entity mirror7></a-entity>
+        <a-entity mirror8></a-entity>s
+        <a-entity mirror9></a-entity>
+        <a-entity mirror10></a-entity>
+        <a-entity mirror11></a-entity>
+        <a-entity mirror12></a-entity>
+        <a-entity mirror13></a-entity>
+        <a-entity mirror14></a-entity>
+        <a-entity mirror15></a-entity>
+        <a-entity mirror16></a-entity>
+        <a-entity mirror17></a-entity>
+        <a-entity mirror18></a-entity>
+        <a-entity mirror19></a-entity>
+        <a-entity mirror20></a-entity>
+
+
+
+        <a-entity position="0 1 0" spe-particles="
+                color: yellow, red, cyan, black;
+                distribution: sphere;
+                randomize-velocity: true;
+                radius: 200,
+                velocity-spread: 15;
+                drag: 1;
+                max-age: 2;
+                duration: -1;
+                blending: additive,
+                active-multiplier: 200000;
+                size: 2, 2, 2, 0
+                "></a-entity>
+
+
+    </a-scene>
+
+</body>
+
+</html>
